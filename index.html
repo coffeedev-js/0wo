@@ -1,407 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Just another Website for Kaomojis!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Just another Website for Kaomojis!">
 
-<!--Implement video meta data-->
+    <!--Implement video meta data-->
 
-<!--New Meta data for WhatsApp-->
-<meta name="description" content="No need for Ctrl+C and Ctrl+V!">
-<meta property="og:title" content="Just another Website for Kaomojis!"/>
-<meta property="og:url" content="https://www.0wo.moe" />
-<meta property="og:description" content="Just another Website for Kaomojis!">
-<meta property="og:image" content="https://www.0wo.moe/metaimgs/wametapic.jpg">
+    <!--New Meta data for WhatsApp-->
+    <meta name="description" content="No need for Ctrl+C and Ctrl+V!">
+    <meta property="og:title" content="Just another Website for Kaomojis!"/>
+    <meta property="og:url" content="https://www.0wo.moe" />
+    <meta property="og:description" content="Just another Website for Kaomojis!">
+    <meta property="og:image" content="https://www.0wo.moe/metaimgs/wametapic.jpg">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.0wo.moe">
-<meta property="og:title" content="Just another Website for Kaomojis!">
-<meta property="og:description" content="No need for Ctrl+C and Ctrl+V!">
-<meta property="og:image" content="https://www.0wo.moe/metaimgs/fb">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.0wo.moe">
+    <meta property="og:title" content="Just another Website for Kaomojis!">
+    <meta property="og:description" content="No need for Ctrl+C and Ctrl+V!">
+    <meta property="og:image" content="https://www.0wo.moe/metaimgs/fb">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://www.0wo.moe">
-<meta property="twitter:title" content="Just another Website for Kaomojis!">
-<meta property="twitter:description" content="No need for Ctrl+C and Ctrl+V!">
-<meta property="twitter:image" content="https://www.0wo.moe/metaimgs/fb">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.0wo.moe">
+    <meta property="twitter:title" content="Just another Website for Kaomojis!">
+    <meta property="twitter:description" content="No need for Ctrl+C and Ctrl+V!">
+    <meta property="twitter:image" content="https://www.0wo.moe/metaimgs/fb">
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Js -->
-<script> src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"
-</script>
-<title>0wo.moe</title>
-
-<!--Other Script-->
-<script>
-	
-/*Button to top*/
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0;
-}
-
-/*Script for Side Nav*/
-		
-/*Width*/
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/*Width2*/
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-</script>
-<link rel="stylesheet" href="css/css.css">
+    <title>Emoji Café!</title>
+    <script src="https://kit.fontawesome.com/18267d4626.js" crossorigin="anonymous"></script>
+    <script src="loadtables.js"></script>
+    <link rel="stylesheet" href="navstyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 
+<div class="pagecontent">
+<div class="placeholder"></div>
 <body>
-<br>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<div id = "imgAlign"> <img src="graphics/bannergif.gif" style="width:50%; hight:50px;" alt=".kaomoji"></div>
-<div id= "wrap"> 
-  <!--Navbar-->
-  
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <!--Menue-->
-        <li class="navbar-header" onclick="openNav()"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: Comic Sans MS"> 三 Menue </a> </li>
-      </ul>
-    </div>
-  </nav>
-  <!--Side Nav-->
-  
-  <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="https://www.0wo.moe/About">//owo what's this?</a>
-    <p class="divider">__________________________________</p>
-    <a href="#kaofave">//My faves</a>
-    <p class="divider">__________________________________</p>
-    <a href="#kaoegirl">//E-Girl starter Pack</a>
-    <p style="color:#FFFFFF">__________________________________</p>
-    <a href="#kaohappy">//Happy</a>
-    <p class="divider">__________________________________</p>
-    <a href="#kaosad">//Sad</a>
-    <p class="divider">__________________________________</p>
-    <a href="#kaoangry">//Angry</a>
-    <p class="divider">__________________________________</p>
-    <a href="#kaomisc">//Misc</a>
-    <p class="divider">__________________________________</p>
-	<a href="#kaodiscomofort">//Discomfort</a>
-    <p class="divider">__________________________________</p>
-  </div>
+   
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'><i class="fas fa-search"></i> Search</a></li>
+   <li><a href='#'>? What's this?</a></li>
+   <li><a href="#"><i class="fas fa-kiss-wink-heart"></i> Switch to Emojis</a></li>
+   <li><a href='#'><i class="fas fa-coffee" id="coffee"></i> About this Café</a></li>
+   <li><a href='#'><i class="fas fa-globe-europe"></i> Other Websites</a></li>
+</ul>
 </div>
-<!--Welcome Message--> 
+<div class="mintybg">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").load("demo_test.txt");
+          });
+        });
+        </script>
 
-<a id= "welcomemessage"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;Fast, simple, ad-free Kaomojis website with click-to-copy buttons!</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;(That's what makes this site better than other Kaomoji websites: no ctrl+c + ctrl+v!)</font>
-      </thead>
-    
-    <tbody>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<!----------Tables-----------------> 
-
-<!--Table Myfaves--> 
-<br>
-<a id= "kaofave"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;My faves</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I use them very often!</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" id="t1" data-tippy-content="Click to copy!" data-clipboard-text="( ͡° ͜ʖ ͡°)">( ͡° ͜ʖ ͡°) </button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" ¯\_(ツ)_/¯"> ¯\_(ツ)_/¯</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="♡">♡</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" (ᗒᗣᗕ)՞">(ᗒᗣᗕ)՞</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" ✧･ﾟ: *✧･ﾟ:*">✧･ﾟ: *✧･ﾟ:*¯</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" ♡ ～('▽^人)">♡ ～('▽^人)</button></td>
-      </tr>
-	  <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="\( ••)†">\( ••)†</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<!--Table egirl--> 
-<br>
-<a id= "kaoegirl"></a>
-  <div class="kaotables table-responsive">
-    <h2>&nbsp;&nbsp;The E-Girl starter pack!</h2>
-    <table class="table">
-      <thead>
-      <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Show how cute and quirky you are! uwu"</font>
-        </thead> 
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" id="t1" data-tippy-content="Click to copy!" data-clipboard-text="🅱">🅱</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="😩">😩</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="💦">💦</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="🍆">🍆</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="💯">💯</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="👏">👏</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="🙈">🙈</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="🔥">🔥</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="💁‍">💁‍</button></td>
-        
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<!--Table Happy--> 
-<a id= "kaohappy"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;Happy Kaomojis</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Express your joy!</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" data-tippy-content="Click to copy!"  data-clipboard-text="（*＾ワ＾*）">（*＾ワ＾*）</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" (＝⌒▽⌒＝)"> (＝⌒▽⌒＝)</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(≧∇≦)/">(≧∇≦)/</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" ☆*: .｡. o(≧▽≦)o .｡.:*☆">☆*: .｡. o(≧▽≦)o .｡.:*☆</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" (*T▽T*)">(*T▽T*)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" ♡ ～('▽^人)">♡ ～('▽^人)</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(◡‿◡✿)">(◡‿◡✿)</button></td>
-		<td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(,,ò᎑ó,,)و">♡(,,ò᎑ó,,)و</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<!--Table Sad--> 
-<a id= "kaosad"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;Sad Kaomojis</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instead of pressing F...</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" data-tippy-content="Click to copy!"  data-clipboard-text="ಥ‿ಥ">ಥ‿ಥ</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="˚‧º·(˚ ˃̣̣̥⌓˂̣̣̥ )‧º·˚">˚‧º·(˚ ˃̣̣̥⌓˂̣̣̥ )‧º·˚</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(ू˃̣̣̣̣̣̣︿˂̣̣̣̣̣̣ ू)">(ू˃̣̣̣̣̣̣︿˂̣̣̣̣̣̣ ू)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(ᗒᗩᗕ)">(ᗒᗩᗕ)</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(◞ ‸ ◟|||)">(◞ ‸ ◟|||)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(๑•﹏•)⋆* ⁑⋆*">(๑•﹏•)⋆* ⁑⋆*</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(・へ・)">(・へ・)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="( ・◇・)">( ・◇・)</button></td>
-      </tr>
-    </tbody>
-  </table>
-  </table>
-</div>
-<br>
-
-<!--Table Angry--> 
-
-<a id= "kaoangry"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;Angry Kaomojis</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use when u r amgery!</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(๑•̀д•́๑)">(๑•̀д•́๑)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(๑•̀ㅁ•́๑)✧ ">(๑•̀ㅁ•́๑)✧</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(　｀_ゝ´)">(　｀_ゝ´)</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="ヽ(`д´；)/">ヽ(`д´；)/</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-<!--Table Misc.--> 
-
-<a id= "kaomisc"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;Misc. Kaomojis</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hmm't'st'd've...</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(´ ▽｀)">(´ ▽｀)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(´▽`ʃƪ)♡">(´▽`ʃƪ)♡</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(╯°□°）╯︵ ┻━┻">(╯°□°）╯︵ ┻━┻</button></td>
-		<td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="( º﹃º )">( º﹃º )</button></td>
-      </tr>
-	  <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(∩˃₎₃₍˂∩)">(∩˃₎₃₍˂∩)</button></td>
-		<td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="( ᐛ )σ">( ᐛ )σ</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<!--Table Discomfort--> 
-<a id= "kaodiscomofort"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;Kaomojis in discomfort</h2>
-  <table class="table">
-    <thead>
-    <font size="+1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Want to show your concern?</font>
-      </thead>
-    
-    <tbody>
-      <tr>
-        <td><script src="Js/clipboard.js-master/dist/clipboard.js"> </script> 
-          <script>new ClipboardJS('.btn');</script>
-          <button class="btn" data-tippy-content="Click to copy!"  data-clipboard-text="_(´ཀ`」 ∠) _">_(´ཀ`」 ∠) _</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="l||l(›ଳдଳ‹)l||l">l||l(›ଳдଳ‹)l||l</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(¯∇¯٥)">(¯∇¯٥)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text=" "₍ ᐢ.  ̫ .ᐢ ₎">☆*: .｡. o(≧▽≦)o .｡.:*☆</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="( ˘･н･)">( ˘･н･)</button></td>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="(;꒪ꈊ꒪;)">(;꒪ꈊ꒪;)</button></td>
-      </tr>
-      <tr>
-        <td><button class="btn" data-tippy-content="Click to copy!" data-clipboard-text="˚‧º·(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )‧º·˚">˚‧º·(˚ ˃̣̣̥᷄⌓˂̣̣̥᷅ )‧º·˚</button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<br>
-<!--End of Kaomoji tables-->
-
-<!--Table More--> 
-
-<a id= "kaomore"></a>
-<div class="kaotables table-responsive">
-  <h2>&nbsp;&nbsp;More to come!</h2>
-  <table class="table">
-    <thead>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-</div>
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<button>Get External Content</button>
 </body>
-<br>
-
- 
-    
-
-<footer>
-  <!--Ko Fi button-->
-  <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
-  <script type='text/javascript'>kofiwidget2.init('Buy me a coffee?', '#ffa6f0', 'G2G4YPBU');kofiwidget2.draw();</script>
-  
-<p style="color:mediumvioletred">« ⋅ʚ♡ɞ⋅ »</p>
-  <a class="inline-p" style="color:mediumvioletred" href="https://www.0wo.moe/About">About</a>
-  <p class="inline-p" style="color:mediumvioletred">|&nbsp;</p>
-  <a class="inline-p" style="color:mediumvioletred" href="https://www.0wo.moe/comingsoon">Submit a Kaomoji</a>
-  <p class="inline-p" style="color:mediumvioletred">|&nbsp;</p>
-  <a class="inline-p" style="color:mediumvioletred" href="https://www.0wo.moe/comingsoon">Changelogs</a>
-  <p class="inline-p" style="color:mediumvioletred; font-family: Comic Sans MS">&nbsp;|&nbsp;</p>
-  <p class="inline-p" style="color:mediumvioletred; href="https://www.0wo.moe/disclaimer_en">Disclaimer</p>
-  <p class="inline-p" style="color:#59B19B;">Site ver. 1.2</p>
-  <br>
-  <p class="inline-p" style="color:mediumvioletred; font-family: Comic Sans MS">Visit also:&nbsp;</p>
-  <a class="inline-p" href="https://www.yatta.moe">Yatta.moe!</a>
-  <p class="inline-p" style="color:mediumvioletred; font-family: Comic Sans MS;">and</p>
-  <a class="inline-p" href="https://www.weebs.moe">Weebs.moe!</a>
-  <p class="inline-p" style="color:mediumvioletred; font-family: Comic Sans MS;">Both are not mine tho.</p>
-</footer>
-
-<!--Moechan-->
-<!--<a href="#"><img id="stickyimg" class="sticky" src="graphics/kaorequest.gif" data-tippy-content="Kaomoji recommendations?" alt="Kaomoji recommendations?"></a>-->
-<!--Tippy and Poppy js-->
-
-<!--Cool libraries below-->
-<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/tippy.js@4"></script>
-<script>
-      tippy('button')
-    </script>
+</div>
+</div>
 </html>
