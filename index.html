@@ -28,23 +28,25 @@
     <meta property="twitter:description" content="No need for Ctrl+C and Ctrl+V!">
     <meta property="twitter:image" content="https://www.0wo.moe/metaimgs/fb">
 
-    <title>Emoji Café!</title>
+    <title>The Emoji Café ☕❤️</title>
     <script src="https://kit.fontawesome.com/18267d4626.js" crossorigin="anonymous"></script>
     <script src="loadtables.js"></script>
-    <link rel="stylesheet" href="navstyles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="trigger.js"></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="navstyles.css">
 </head>
 
 <div class="pagecontent">
-<div class="placeholder"></div>
-<body>
-   
+<div class="placeholder" style="background-color: lightgrey;width: 300px;border: 5px solid red;padding: 50px;margin: 20px;margin-left: 30%;">Picture Placeholder</div>
+<body style="background-color: #89d4cf; background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);">
+  
 <div id='cssmenu'>
 <ul>
    <li class='active'><a href='#'><i class="fas fa-search"></i> Search</a></li>
-   <li><a href='#'>? What's this?</a></li>
    <li><a href="#"><i class="fas fa-kiss-wink-heart"></i> Switch to Emojis</a></li>
+   <li><a href='#'>? What's this?</a></li>
    <li><a href='#'><i class="fas fa-coffee" id="coffee"></i> About this Café</a></li>
    <li><a href='#'><i class="fas fa-globe-europe"></i> Other Websites</a></li>
 </ul>
@@ -53,17 +55,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-          $("button").click(function(){
-            $("#div1").load("demo_test.txt");
-          });
-        });
-        </script>
-
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-<button>Get External Content</button>
-</body>
+  </body>
 </div>
 </div>
 </html>
